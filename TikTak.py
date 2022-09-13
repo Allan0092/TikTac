@@ -160,13 +160,13 @@ class Game:
 
         print("THE END")
 
-a = game()
+a = Game()
 play_again = True
 while play_again :
     ask = input('Do you wanna play again? [Y/N]')
     ask = ask.upper()
     if ask == 'Y':
-        a = game()
+        a = Game()
     else :
         play_again = False
         print("Thank you for playing")
