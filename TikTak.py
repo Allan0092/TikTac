@@ -6,7 +6,7 @@ colorama.init()
 print(Front.RED + 'TEXT IN RED')
 
 '''
-class game:
+class Game:
     def __init__(self):
         self.turn = 'O'
         self.limit = 0
