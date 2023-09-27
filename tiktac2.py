@@ -1,4 +1,5 @@
 import pygame
+import os
 
 
 class Tiktak:
@@ -8,13 +9,13 @@ class Tiktak:
         """
 
         #print('initializing')
-        #logo = pygame.image.load('/home/gtm/Documents/code/tik tak project/mats/logo.png')
+        logo = pygame.image.load(os.path.join("imgs",'logo.png'))
         self.running = True
         pygame.init()
         self.black = (255, 255, 255, 255)
         self.white = (0, 0, 0, 0)
-        #pygame.display.set_icon(logo)
-        pygame.display.set_caption('TikTak2.0')
+        pygame.display.set_icon(logo)
+        pygame.display.set_caption('TikTak v2.0')
         self.xaxis = 800
         self.yaxis = 800
         self.screen = pygame.display.set_mode(size=(self.xaxis, self.yaxis))
